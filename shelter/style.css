@@ -23,6 +23,20 @@ a:hover {
     background-color: var(--color-primary-light);
 }
 
+.light-background{
+    background-color: var(--color-light-xl);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex; /* Включаем Flexbox  */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center;
+}
+
+.nav-light{
+    width: 1200px;
+    display: flex; /* Включаем Flexbox  */
+    align-items: center; /* Центрируем по горизонтали */
+}
 .button-base {
     color: var(--color-dark-3xl);
     display: flex;
@@ -66,7 +80,7 @@ a:hover {
     background: url(images/start-screen-background.jpg);
 }
 
-header {
+.header-main {
     /* position: absolute; */
     /* width: 100%; */
     padding-top: 30px;
@@ -94,7 +108,13 @@ header {
     -webkit-text-stroke: 0.2px #000000; 
     margin: 0;
   }
-  
+
+  .header-light{
+    color: var(--color-dark-l);
+    text-shadow:none;
+    -webkit-text-stroke: 0px #000000; 
+  }
+
   .header-subtitle {
     font-family: var(--font-family--arial);
     -webkit-text-stroke: 0.2px #000000; 
@@ -107,7 +127,12 @@ header {
     margin-top: 10px;
     margin-left: 4px;
   }
-  
+
+  .subtitle-light{
+    -webkit-text-stroke: none; 
+    text-shadow: none;
+    color: var(--color-dark-3xl);
+  }
 .main-backgroud{
     background: 
         radial-gradient(
@@ -189,6 +214,39 @@ nav ul{
 .logo{
     width: 184px;
     height: 60px;
+}
+
+.light{
+    color: var(--color-dark-l);
+}
+
+.third-page-light{
+    /* width: 1280px; */
+    background-color: var(--color-light-l);
+    /* position: relative; /* Задаем контекст для абсолютного позиционирования */
+    margin: 0% auto; 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    height: 1342px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0% auto; 
+}
+
+.third-page-wrapper-light{
+    width: 1200px;
+    height: 1162px;
+    top: 135px;
+    gap: 0px;
+    opacity: 0px;
+    
+    gap: 0px;
+    opacity: 0px;   
+    display: flex;               
+    flex-direction: column;      
+    /* justify-content: center;     */
+    align-items: center;  
 }
 .right img{
     height: 728px;
@@ -353,6 +411,15 @@ header a:hover{
     justify-content: space-between; /* Размещаем элементы по бокам */
     align-items: center; /* Центрируем элементы по вертикали */
     position: relative; /* Для позиционирования кнопок внутри слайдера */
+}
+.grid-light{
+    width: 1200px;
+    height: 930px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 равных колонок */
+    grid-auto-rows: 50%; /* Высота каждой строки */
+    gap: 30px; /* Отступы между элементами */
+    width: 100%; /* Ширина контейнера */
 }
 
 .slider-button-left, .slider-button-right a:hover{
