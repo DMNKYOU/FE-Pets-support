@@ -1,0 +1,685 @@
+:root{
+    --color-light-xl:#FFFFFF;
+    --color-light-l:#F6F6F6;
+    --color-light-s:#FAFAFA;
+    --color-dark-s:#CDCDCD;
+    --color-dark-m:#B2B2B2;
+    --color-dark-l:#545454;
+    --color-dark-xl:#4C4C4C;
+    --color-dark-2xl:#444444;
+    --color-dark-3xl:#292929;
+    --color-primary:#F1CDB3;
+    --color-primary-light:#FDDCC4;
+}
+
+a {
+    text-decoration: none;  /* Отключить подчеркивание */
+    cursor: pointer;       /* Курсор в виде руки при наведении */
+    text-align: center;     /* Текст по центру */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+a:hover {
+    background-color: var(--color-primary-light);
+}
+
+.button-base {
+    color: var(--color-dark-3xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  
+  .button-primary {
+    border-radius: 100px;
+    padding: 15px 45px;
+    background-color: var(--color-primary);
+  }
+
+  .button-secondary{
+    padding: 13px 42.5px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+  }
+
+  .button-main{
+    width: 118px;/*207px;*/
+    height: 52px;
+  }
+
+.start-screen-dark-background{
+    background: url(images/start-screen-background.jpg);
+}
+
+header {
+    /* position: absolute; */
+    /* width: 100%; */
+    padding-top: 30px;
+    padding-bottom: 90px;
+    width: 1200px;
+    height: 60px;
+    max-width: 1200px;
+    margin: auto auto;
+  }
+  
+  /* .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  } */
+  
+  .header-title {
+    color: var(--color-primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-shadow: 0px 4px 4px #000000;
+    -webkit-text-stroke: 0.2px #000000; 
+    margin: 0;
+  }
+  
+  .header-subtitle {
+    font-family: var(--font-family--arial);
+    -webkit-text-stroke: 0.2px #000000; 
+    text-shadow: 0px 4px 4px #000000;
+    color: var(--color-light-xl);
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 4px;
+  }
+  
+.main-backgroud{
+    background: 
+        radial-gradient(
+            circle at left top,
+            #5B483A 0%,
+            #262425 100%
+        ),
+        url("images/noise_transparent@2x.png");
+
+    background-blend-mode: overlay; /* Настроить смешивание градиента и текстуры */
+    width: 100%;
+}
+
+.first-page{
+    height: 908px;
+    display: flex; /* Включаем Flexbox */
+    flex-direction: column; /* Располагаем элементы в столбик */
+    justify-content: space-between; /* Распределяем элементы сверху и снизу */
+    align-items: center; /* Центрируем по горизонтали */
+}
+
+.main-section{
+    display: flex;
+    height: 728px;
+    width: 1200px;
+    /* align-items: center; */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0% auto;
+}
+
+.left
+{
+    margin-top: 163px;
+    width: 460px;
+    height: 322px;
+    gap: 27px;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбик */
+    justify-content: center;
+    /* align-items: center; Центрируем по горизонтали */
+    /* flex: 1; */
+}
+
+.left h2{
+    color: var(--color-light-xl);
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0%;
+}
+
+.left p{
+    color: var(--color-dark-s);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    width: 184px;
+    height: 60px;
+}
+.right img{
+    height: 728px;
+    width: 698px;
+    /* margin-top: 4px; */
+}
+header a:hover{
+    background-color: transparent;
+}
+.title{
+    /* position: absolute;  */
+    width: 184px; 
+    height: 35px;
+    color: var(--color-primary);
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    border: 1px solid #000000; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+   
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-link {
+    display: block;
+    font-family: 'Arial';
+    color: var(--color-dark-s);
+    font-size: 15px;
+    line-height: 24px;
+    transition: color 0.3s, border 0s;
+  }
+  
+  .menu-link-active {
+    color: var(--color-light-s);
+    border-bottom: 3px solid var(--color-primary);
+    pointer-events: none;
+  }
+
+  /*  ---------------------Second Page --------------------- */
+
+  .second-page {
+    height: 588px;
+    /* width: 1280px; */
+    position: relative; /* Задаем контекст для абсолютного позиционирования */
+    margin: 0% auto;
+}
+
+.second-page-wrapper {
+    height: 408px;
+    width: 1200px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    gap: 120px;
+}
+
+.right-about
+{
+    width: 430px;
+    height: 380px;
+}
+
+.right-about h3 {
+   color: var(--color-dark-l);
+   
+   font-family: 'Georgia', serif;
+   font-size: 35px;
+   font-weight: 400;
+   /* line-height: 45.5px; */
+   letter-spacing: 0.06em;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   margin: 0;
+}
+
+.right-about p {
+    color: var(--color-dark-xl);
+    
+    font-family: 'Arial', serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+     margin-top: 25px; /*Добавляем отступ сверху для каждого <p> */
+}
+
+.left-about
+{
+    width: 300px;
+    height: 408px;
+}
+
+  /*  ---------------------Third Page --------------------- */
+
+.third-page{
+    /* width: 1280px; */
+    height: 877px;
+    background-color: var(--color-light-l);
+    /* position: relative; /* Задаем контекст для абсолютного позиционирования */
+    margin: 0% auto; 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+
+.third-page-wrapper{
+    width: 1200px;
+    height: 697px;
+    top: 80px;
+    left: 40px;
+    gap: 0px;
+    opacity: 0px;   
+    display: flex;               
+    flex-direction: column;      
+    /* justify-content: center;     */
+    align-items: center;      
+}
+
+.title-content h3{    
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: var(--color-dark-l);
+}
+
+.title-content {
+    width: 400px;
+    height: 90px;
+    margin-bottom: 60px;
+}
+
+.slider {
+    width: 1200px;
+    height: 435px;
+    margin: 0px auto; /* Центрируем слайдер по горизонтали */
+    display: flex;  /* Включаем Flexbox */
+    justify-content: space-between; /* Размещаем элементы по бокам */
+    align-items: center; /* Центрируем элементы по вертикали */
+    position: relative; /* Для позиционирования кнопок внутри слайдера */
+}
+
+.slider-button-left, .slider-button-right a:hover{
+    background-color: transparent;
+  }
+
+.slider-button-left, .slider-button-right {
+    z-index: 10; /* Позиционируем кнопки поверх слайдера */
+    border: none;
+}
+
+.slider p {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.slider a:hover {
+background-color: none;
+width: 52px;
+height: 52px;
+background: var(--color-primary-light);
+border-radius: 100px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.button-slider{
+    margin-top: 60px;
+}
+
+.slider-wrapper {
+    display: flex; /* Элементы внутри слайдера располагаются по горизонтали */
+    justify-content: space-between; /* Разделяем элементы слайдера с равными промежутками */
+    gap:75px;/* Отступы между слайдами */
+    width: 80%; /* Контейнер слайдера будет занимать 80% ширины родителя */
+    height: 435px; /* Элементы слайдера будут заполнять доступную высоту */
+}
+
+.slider-card {
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+    background-color: var(--color-light-s);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Элементы слайдера будут заполнять доступную высоту */
+    width: 270px;
+}
+
+.slider-card-content{
+    display: flex; /* Включаем Flexbox */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+}
+
+/* --------------------- Fourth Page --------------------- */
+.fourth-page{
+    /* width: 1280px; */
+    height: 611px;
+    background-color: var(--color-light-xl);
+    /* position: relative; /* Задаем контекст для абсолютного позиционирования */
+    margin: 0% auto; 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+
+.fourth-page-wrapper {
+    height: 431px;
+    width: 1200px;
+    gap: 0px;
+    opacity: 0px;   
+    display: flex;               
+    flex-direction: column;      
+    /* justify-content: center;     */
+    align-items: center;
+}
+
+.list-content{
+    display: flex;               
+    flex-direction: column;   
+    justify-content: space-between;    
+    /* align-items: center;       */
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+    gap: 50px;
+    width: 1028px;
+    height: 281px;
+}
+
+.row1, .row2{
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Располагаем элементы с равными отступами */
+    /* width: 100%; /* Заполняет всю ширину родителя */
+    /* gap: 20px;Равные отступы между элементами */
+}
+
+/* .list-content:div:nth-child(6)
+.list-content:div:nth-child(7)
+.list-content:div:nth-child(8)
+.list-content:div:nth-child(9) {
+    grid-template-columns: repeat(4, 1fr); Для второй строки
+
+
+
+     grid-template-columns: repeat(5, 1fr); /* Для первой строки 5 элементов
+    /* grid-auto-rows: 50%; Высота каждой строки 
+    gap: 10px; /* Отступы между элементами 
+    
+    width: 1028px;
+    height: 281px;
+    background-color: #B2B2B2;
+} */
+
+.list-item{
+    /* height: 82px; */
+    display: flex; /* Элементы внутри слайдера располагаются по горизонтали */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center; 
+    align-items: center; /* Центрируем элементы по горизонтали */
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+}
+.list-item img{
+    width: 60px;
+    height: 60px;
+}
+
+.list-item h4{
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin-top: 15px;
+}
+
+/*  ---------------------Fifth Page --------------------- */
+
+.fifth-page {
+    height: 462px;
+    /* width: 1280px; */
+    position: relative; /* Задаем контекст для абсолютного позиционирования */
+    margin: 0% auto;
+    background-color: var(--color-light-l);
+}
+
+.fifth-page-wrapper{
+    height: 282px;
+    width: 915px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    gap: 19px;
+}
+
+.fifth-page-wrapper h3 {
+    color: var(--color-dark-l);
+    
+    font-family: 'Georgia', serif;
+    font-size: 35px;
+    font-weight: 400;
+    /* line-height: 45.5px; */
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+ }
+
+ .fifth-page-wrapper h5 {
+    color: var(--color-dark-l);
+    
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    align-items: normal; 
+    margin: 0;
+ }
+
+
+ .fifth-page-wrapper h4 {
+    color: var(--color-dark-l);
+    
+font-family: Georgia;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.06em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+ }
+.left-donation
+{
+    width: 505px;
+    height: 261px;
+}
+
+.right-donation{
+    width: 380px;
+    height: 282px;
+    display: flex; /* Элементы внутри слайдера располагаются по горизонтали */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: center; 
+    gap: 20px;
+    flex: 1; /* Равномерно распределяем элементы слайдера */
+}
+
+.right-donation p{
+
+    color: var(--color-dark-m);
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+  
+.donation-link {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    height: 28px;
+    width: 349px;
+    color: var(--color-dark-l);
+    border-radius: 9px;
+    padding: 10px 15px;
+  }
+
+  /*  ---------------------Footer --------------------- */
+
+  footer{
+    height: 350px;
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: flex-end;
+  }
+
+  footer a:hover{
+    background-color: transparent;
+  }
+  .footer-main{
+    width: 1200px;
+    height: 310px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 150px; 
+  }
+
+  .section{
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;
+    gap: 40px; 
+    height: 234px;
+  }
+
+  .phone, .address
+  {
+    width: 302px;
+  }
+  .footer-main h3{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--color-light-xl);
+  }
+
+  .footer-main h4 {
+    color: var(--color-primary);
+    
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+ }
+
+ .footer-link {
+    color: var(--color-primary);
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s;
+  }
+  
+  .footer-link svg {
+    flex-shrink: 0;
+  }
+  
+  .footer-link svg path {
+    transition: all 0.3s;
+  }
+
+  
